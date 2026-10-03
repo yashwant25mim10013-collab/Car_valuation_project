@@ -5,7 +5,8 @@ An end-to-end machine learning project that predicts the price (in ₹ lakh) of 
 
 > **Technical Team Task Round: AI/ML Domain, Task 1** (Exploratory Data Analysis and Predictive Modeling: Tabular Regression)
 
- **Live demo:** [Open the app](https://YOUR-APP-NAME.streamlit.app)
+ **Live demo:** https://carvaluationproject-1-infinity.streamlit.app/
+ 
 
 ---
 
