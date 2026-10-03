@@ -1,0 +1,42 @@
+Loaded dataset from: cars.csv
+Shape: (3000, 11)
+<class 'pandas.DataFrame'>
+RangeIndex: 3000 entries, 0 to 2999
+Data columns (total 11 columns):
+ #   Column        Non-Null Count  Dtype  
+---  ------        --------------  -----  
+ 0   brand         3000 non-null   str    
+ 1   model_year    3000 non-null   int64  
+ 2   fuel_type     2955 non-null   str    
+ 3   transmission  3000 non-null   str    
+ 4   owner_type    3000 non-null   str    
+ 5   km_driven     3000 non-null   float64
+ 6   engine_cc     2910 non-null   float64
+ 7   power_bhp     2880 non-null   float64
+ 8   mileage_kmpl  2850 non-null   float64
+ 9   seats         2940 non-null   float64
+ 10  price_lakh    3000 non-null   float64
+dtypes: float64(6), int64(1), str(4)
+memory usage: 257.9 KB
+
+Missing values per column:
+fuel_type        45
+engine_cc        90
+power_bhp       120
+mileage_kmpl    150
+seats            60
+dtype: int64
+Skewness  raw: 2.74 | log: 0.63
+Train: (2400, 11) | Test: (600, 11)
+Best model (highest test R²): Linear Regression
+Predicted price: Rs 6.95 lakh
+
+=== Enter your car details (press Enter to accept the default) ===
+Brand ['Audi', 'BMW', 'Honda', 'Hyundai', 'Mahindra', 'Maruti', 'Mercedes', 'Tata', 'Toyota'] [Maruti]: Traceback (most recent call last):
+  File "/home/claude/final/Car_Valuation_Project/car_valuation.py", line 278, in <module>
+    brand=ask("Brand", "Maruti", str, sorted(df['brand'].dropna().unique())),
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/final/Car_Valuation_Project/car_valuation.py", line 272, in ask
+    val = input(f"{prompt}{hint} [{default}]: ").strip()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+EOFError: EOF when reading a line
